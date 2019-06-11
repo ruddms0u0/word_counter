@@ -1,0 +1,16 @@
+<html lan=eng>
+    <head>
+        <h1>This is wordcount website</h1>
+        <h2>welcome</h2>
+    </head>
+    <body>
+        <a href="{% url 'about' %}"> ABOUT </a>
+
+        <form action="{% url 'count' %}">
+            <textarea cols="40" rows="10" name="fulltext"></textarea>
+            <br>
+            <input type="submit" value="Count!"/>
+
+        </form>
+    </body>
+</html>

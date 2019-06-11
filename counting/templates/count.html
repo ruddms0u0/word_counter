@@ -1,0 +1,14 @@
+<html>
+    <h1>
+        입력한 텍스트는 {{total}}개의 단어로 구성되었습니다.
+    </h1>
+    <a href="{% url 'home' %}"> agian</a>
+    <br>
+    <h2> text: </h2>
+    {{fulltext}}
+    <br>
+    <h2> count : </h2>
+    {% for word, howmany in dictionary %}
+    {{word}} : {{howmany}}
+    {%endfor%}
+</html> 
